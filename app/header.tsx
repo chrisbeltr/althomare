@@ -7,7 +7,8 @@ import { slide as Menu } from "react-burger-menu";
 
 const paths = [
   ["/", "Home"],
-  ["/blog", "Blog"],
+  // ["/shows", "Shows"],
+  // ["/news", "News"],
   ["/about", "About Althomare"],
   ["/contact", "Contact Us"],
 ];
