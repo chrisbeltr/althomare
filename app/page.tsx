@@ -1,3 +1,9 @@
+import Image from "next/image";
+
 export default function Page() {
-  return <div>literally althomare :astonished:</div>;
+  return (
+    <>
+      <Image src="/group.jpeg" alt="Group picture of Althomare company" fill />
+    </>
+  );
 }
