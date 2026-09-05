@@ -4,7 +4,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="relative">{children}</main>
     </>
   );
 }
