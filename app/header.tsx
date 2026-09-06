@@ -31,7 +31,7 @@ export default function Header() {
   const isMobile = useMediaQuery("(min-width: 650px)");
 
   return (
-    <header className="w-full flex justify-start">
+    <header className="w-full flex justify-start border-b border-b-gray-500">
       {/* logo */}
       <Link className="p-6 bg-orange-950 text-white font-bold" href="/">
         ALTHOMARE
