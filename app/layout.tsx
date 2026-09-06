@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-200 text-gray-900 min-h-dvh flex flex-col justify-between items-center">
+      <body className="bg-gray-200 text-gray-900 min-h-dvh flex flex-col justify-between">
         {children}
       </body>
     </html>
