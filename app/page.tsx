@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <>
       <div className="relative max-w-275 w-full">
-        {/* <div className="max-w-225"> */}
         <Image
           src="/group.jpeg"
           alt="Group picture of Althomare company"
@@ -12,9 +11,35 @@ export default function Page() {
           height={1536}
           loading="eager"
         />
-        {/* </div> */}
-        <div className="absolute right-0 top-5 p-8 text-5xl font-bold text-white rounded-md">
+        <div className="absolute right-0 top-0 md:top-5 p-5 md:p-8 text-2xl sm:text-3xl md:text-5xl font-bold text-white">
           Where the magic happens.
+        </div>
+      </div>
+      <div className="relative w-full flex flex-col items-center bg-gray-300 text-gray-600">
+        <div className="relative max-w-275 w-full p-5 flex flex-col md:flex-row justify-end">
+          <div className="md:absolute md:left-5 md:h-[calc(100%-40px)] md:w-3/4 upnext-gradient md:flex md:flex-col md:justify-center">
+            <div className="font-bold text-2xl">Coming up next...</div>
+            <div className="md:w-2/3 text-xl pb-5 md:p-0">
+              Our next production will be Little Shop of Horrors! No, we will
+              not have a giant carnivorous plant shipped to Althea's apartment.
+              Or dentistry equipment. Sorry Pirelli. Make sure to fill out the
+              Google Form if you haven't already! If you didn't submit your bio,
+              get that to Sebastian as soon as possible!
+              <br />
+              <br />
+              Additionally, we will be hosting our first ever Althonys award
+              ceremony, so make sure to cast your votes in that same Google
+              Form!
+            </div>
+          </div>
+          <Image
+            src="/littleshop.webp"
+            alt="Little Shop of Horrors banner"
+            width={1024}
+            height={800}
+            loading="eager"
+            className="md:w-1/2"
+          ></Image>
         </div>
       </div>
     </>

@@ -57,3 +57,11 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.upnext-gradient {
+  background: #D1D5DC;
+  background: -webkit-linear-gradient(90deg, rgba(209, 213, 220, 1) 0%, rgba(209, 213, 220, 1) 75%, rgba(209, 213, 220, 0) 100%);
+  background: -moz-linear-gradient(90deg, rgba(209, 213, 220, 1) 0%, rgba(209, 213, 220, 1) 75%, rgba(209, 213, 220, 0) 100%);
+  background: linear-gradient(90deg, rgba(209, 213, 220, 1) 0%, rgba(209, 213, 220, 1) 75%, rgba(209, 213, 220, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#D1D5DC", endColorstr="#D1D5DC", GradientType=1);
+}
