@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-md: 900px;
+}
+
 .nointeract {
   pointer-events: none;
   user-select: none;

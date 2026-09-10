@@ -11,7 +11,7 @@ export default function Page() {
           height={1536}
           loading="eager"
         />
-        <h2 className="absolute right-0 top-0 md:top-5 p-5 md:p-8 text-2xl sm:text-3xl md:text-5xl font-bold text-white">
+        <h2 className="absolute right-0 top-0 md:top-5 p-5 md:p-8 text-2xl sm:max-md:text-3xl md:text-5xl font-bold text-white">
           Where the magic happens.
         </h2>
       </div>
