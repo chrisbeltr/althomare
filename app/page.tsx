@@ -1,5 +1,24 @@
 import Image from "next/image";
 
+function Card({
+  title,
+  date,
+  attendance,
+}: {
+  title: string;
+  date: string;
+  attendance: number;
+}) {
+  return (
+    <div className="min-w-50 w-max p-4 flex flex-col flex-1 items-center border-4 rounded-xl border-gray-500 bg-gray-300">
+      <h3 className="text-lg font-semibold">{title}</h3>
+      <div className="flex justify-between gap-4">
+        <i>{date}</i>|<i>{attendance} in attendance</i>
+      </div>
+    </div>
+  );
+}
+
 export default function Page() {
   return (
     <>
@@ -40,6 +59,14 @@ export default function Page() {
             loading="eager"
             className="md:w-1/2"
           ></Image>
+        </div>
+      </div>
+      <div className="relative w-full flex flex-col items-center text-gray-600">
+        <div className="relative max-w-275 w-full p-5 flex flex-col">
+          <h2 className="font-bold text-2xl self-end">
+            Past productions include...
+          </h2>
+          <Card title="Hamilton" date="June 2025" attendance={13} />
         </div>
       </div>
     </>
