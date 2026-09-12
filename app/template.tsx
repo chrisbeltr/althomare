@@ -1,8 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
-import Footer from "./footer";
+import Footer from "./_components/Footer";
 
-const Header = dynamic(() => import("./header"), { ssr: false });
+const Header = dynamic(() => import("./_components/Header"), { ssr: false });
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
