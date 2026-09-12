@@ -1,23 +1,5 @@
 import Image from "next/image";
-
-function Card({
-  title,
-  date,
-  attendance,
-}: {
-  title: string;
-  date: string;
-  attendance: number;
-}) {
-  return (
-    <div className="min-w-50 w-max p-4 flex flex-col flex-1 items-center border-4 rounded-xl border-gray-500 bg-gray-300">
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <div className="flex justify-between gap-4">
-        <i>{date}</i>|<i>{attendance} in attendance</i>
-      </div>
-    </div>
-  );
-}
+import Card from "./card";
 
 export default function Page() {
   return (
@@ -62,11 +44,19 @@ export default function Page() {
         </div>
       </div>
       <div className="relative w-full flex flex-col items-center text-gray-600">
-        <div className="relative max-w-275 w-full p-5 flex flex-col">
+        <div className="relative max-w-275 w-full p-5 flex flex-col gap-5">
           <h2 className="font-bold text-2xl self-end">
             Past productions include...
           </h2>
-          <Card title="Hamilton" date="June 2025" attendance={13} />
+          <div className="w-full flex sm:flex-row-reverse sm:justify-center flex-wrap sm:flex-wrap gap-5">
+            <Card title="Legally Blonde" date="August 2026" attendance={17} />
+            <Card title="Newsies" date="June 2026" attendance={19} />
+            <Card title="Into the Woods" date="April 2026" attendance={16} />
+            <Card title="Sweeney Todd" date="January 2026" attendance={17} />
+            <Card title="Wicked" date="October 2025" attendance={15} />
+            <Card title="Les Miserables" date="August 2025" attendance={14} />
+            <Card title="Hamilton" date="June 2025" attendance={13} />
+          </div>
         </div>
       </div>
     </>
